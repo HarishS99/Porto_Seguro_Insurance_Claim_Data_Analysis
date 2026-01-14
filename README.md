@@ -1,13 +1,14 @@
-🚗 Porto Seguro Insurance Claim Risk Prediction
+**🚗 Porto Seguro Insurance Claim Risk Prediction**
 
-Porto Seguro Safe Driver Dataset
-📌 Project Overview
+**Porto Seguro Safe Driver Dataset**
+
+**📌 Project Overview**
 
 This project focuses on predicting the probability that a policyholder will file an auto insurance claim in the following year using the Porto Seguro Safe Driver Prediction dataset from Kaggle. The objective is to build and compare multiple machine learning models while prioritizing ranking-based performance metrics such as ROC-AUC and the Gini Index, which are standard in insurance risk modeling.
 
 The project demonstrates the complete machine learning pipeline—from data understanding and preprocessing to model evaluation and comparison—while highlighting the trade-offs between interpretability, complexity, and predictive performance.
 
-🎯 Objectives
+**🎯 Objectives**
 
 Predict insurance claim likelihood using anonymized driver, vehicle, and regional features
 
@@ -19,7 +20,8 @@ Identify the best-performing model aligned with business objectives
 
 Provide insights into model selection for structured tabular data
 
-📂 Dataset Description
+
+**📂 Dataset Description**
 
 Source: Kaggle – Porto Seguro Safe Driver Prediction
 
@@ -39,7 +41,9 @@ Missing values encoded as -1
 
 Calculated features (ps_calc_*) with minimal predictive value
 
-🔍 Exploratory Data Analysis (EDA)
+
+
+**🔍 Exploratory Data Analysis (EDA)**
 
 EDA was conducted to:
 
@@ -51,7 +55,9 @@ Evaluate feature importance and noise
 
 Validate competition insights (e.g., low signal in _calc features)
 
-Key findings:
+
+
+**Key findings:**
 
 Predictive signal is largely additive and structured
 
@@ -59,7 +65,9 @@ A small subset of features dominates risk prediction
 
 Proper preprocessing is critical for stable model performance
 
-🧹 Data Preparation
+
+
+**🧹 Data Preparation**
 
 Random under-sampling applied to address class imbalance
 
@@ -73,7 +81,9 @@ Categorical variables one-hot encoded
 
 Final processed dataset saved as processed_data.xlsx
 
-🤖 Modeling Strategy
+
+**🤖 Modeling Strategy**
+
 Baseline Models
 
 Logistic Regression
@@ -94,7 +104,9 @@ Parsimonious (feature-reduced) models
 
 Rank-weighted ensemble
 
-⚙️ Hyperparameter Tuning
+
+
+**⚙️ Hyperparameter Tuning**
 
 Grid Search and Random Search
 
@@ -106,7 +118,9 @@ Neural network tuning (layers, units, dropout, learning rate)
 
 Feature selection for parsimonious boosting models
 
-📊 Evaluation Metrics
+
+
+**📊 Evaluation Metrics**
 
 Given the imbalanced nature of the problem, evaluation focused on:
 
@@ -122,7 +136,10 @@ Threshold Analysis
 
 Accuracy was reported but not used as a primary metric.
 
-🏆 Results Summary
+
+
+**🏆 Results Summary**
+
 Model	Gini Index
 Decision Tree	0.19
 Naïve Neural Network	0.22
@@ -134,10 +151,13 @@ XGBoost (Parsimonious)	0.2850
 Rank-Weighted Ensemble	0.2822
 Wide & Deep Neural Network	~0.29
 
-Best Performing Model:
-✅ XGBoost (Parsimonious Feature Set)
 
-📌 Key Conclusions
+
+**Best Performing Model:
+✅ XGBoost (Parsimonious Feature Set)**
+
+
+**📌 Key Conclusions**
 
 Model performance is driven more by data structure and feature quality than algorithmic complexity
 
@@ -147,7 +167,9 @@ Feature parsimony improves generalization and stability
 
 Ranking-based evaluation is essential for real-world insurance use cases
 
-🔮 Future Scope
+
+**🔮 Future Scope**
+
 
 Advanced feature engineering and interaction modeling
 
@@ -159,7 +181,9 @@ Cost-sensitive optimization aligned with business loss functions
 
 Integration of temporal or external data sources
 
-👥 Contributors
+
+**👥 Contributors**
+
 
 Group V
 
@@ -177,5 +201,6 @@ Ankur
 
 Kirti
 
-Course: Machine Learning and Big Data
-Instructor: Prof. Srikumar Krishnamoorthy
+
+**Course: Machine Learning and Big Data
+Instructor: Prof. Srikumar Krishnamoorthy**
